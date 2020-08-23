@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript" src="jquery-1.5.2.min.js"></script>
+<link href="size.css" rel="stylesheet" type="text/css" />
+<title>твой личный стиль</title>
+
+</head>
+<body>
+<div style="position: absolute; left: 527px; top: 12px;"><img src="men.png" width="410" height="549"></div>
+
+<div class="s1">
+  <div id="R1"><img src="Di5.png" width="7" height="542" alt="размеры"></div>
+	<div class="s2" id="R2"><img src="Di4.png" width="57" height="7" alt="размеры"></div>
+	<div class="s3" id="R3"><img src="Di4.png" width="50" height="7" alt="размеры"></div>
+	<div class="s4">
+		<div id="R4"><img src="Di4.png" width="145" height="7" alt="размеры"></div>	
+	</div>
+	<div class="s5" id="R5"><img src="Di4.png" width="100" height="7" alt="размеры"></div>
+	<div class="s7">
+		<div id="R10"><img src="Di5.png" width="7" height="293" alt="размеры"></div>
+		<div class="s6" id="R6"><img src="Di4.png" width="100" height="7" alt="размеры"></div>
+		<div class="s8" id="R7"><img src="Di4.png" width="117" height="7" alt="размеры"></div>
+		<div class="s9" id="R8"><img src="Di5.png" width="7" height="250" alt="размеры"></div>
+	</div>
+</div>
+
+<div class="s11">
+	<div class="s12" id="R11"><img src="Di4.png" width="66" height="7" alt="размеры"></div>
+	<div class="s13" id="R12"><img src="Di4.png" width="45" height="7" alt="размеры"></div>
+ 	<div class="s14" id="R13">
+    	<div class="s141" id="R9"><img src="Di4.png" width="70" height="7" alt="размеры"></div>
+ 	</div>
+	<div class="s15" id="R14"><img src="Di4.png" width="75" height="7" alt="размеры"></div>
+	<div class="s17">
+		<div class="s16" id="R18"><img src="Di4.png" width="70" height="7" alt="размеры"></div>
+		<div class="s18" id="R19">
+ 			<div class="s18"><img src="Di4.png" width="75" height="7" alt="размеры"></div>	
+    	</div>
+		<div class="s19" id="R20"><img src="Di5.png" width="7" height="293" alt="размеры"></div>
+ 	</div>
+</div>
+
+<div id="pos" style="top:13px;">Обхват головы. см.
+<form><input id="plus" type="text" onFocus="F1()"></form></div>
+<div id="pos" style="top: 62px;">Обхват шеи. см.
+  <form><input type="text" onFocus="F2()"></form></div>
+<div id="pos" style="top: 156px;">Обхват груди. см.
+<form><input type="text"  onFocus="F4()"></form></div>
+<div id="pos" style="top: 109px;">Ширина плеч. см.
+  <form><input type="text" onFocus="F3()"></form></div>
+<div id="pos" style="top: 205px;">Обхват талии. см.
+<form><input type="text" onFocus="F5()"></form></div>
+<div id="pos" style="top: 254px;">Обхват бёдер. см.
+<form><input type="text" onFocus="F6()"></form></div>
+<div id="pos" style="top: 301px;">Длинна ноги. см.
+<form><input type="text" onFocus="F7()"></form></div>
+<div id="pos" style="top: 350px;">Длинна вн.ноги. см.
+<form><input type="text" onFocus="F8()"></form></div>
+<div id="pos" style="top: 401px;">Рост. см.
+<form><input type="text" onFocus="F9()"></form></div>
+
+<div class="text_info" id="info"></div>
+
+</body>
+<script language="javascript">
+var warning = "<div style=\"position:inherit; vertical-align:bottom; color:#0C6;\">Эти мерки нужны для лучшей сортировки одежды для Вас и отброса неважной одежды. Однако после, Вы можете выберать одежду не только по своим меркам, но и для друзей - сняв галочку в поиске &quot;мои размеры&quot;.</div>";
+function F1(){
+	$('#R11').css('visibility','visible'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','visible'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden')
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват головы." + warning;
+}
+function F2(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','visible'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','visible'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват шеи." + warning;
+}
+function F3(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','visible'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Ширина плеч. Лучше всего измерять по Вашей любимой рубашке или блузке: от отдного шва до другого, по спине через основание шеи." + warning;
+}
+function F4(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','visible'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','visible'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват груди. Измеряется по самой широкой части груди." + warning;
+}
+function F5(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','visible'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','visible'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват талии. Измеряется по самой узкой части." + warning;
+}
+function F6(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','visible'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','visible'),
+	$('#R8').css('visibility','hidden'),
+	$('#R10').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват бедер. Измеряется по самой широкой части бедер. Рекомендуется подвигать портновский метр вверх и вниз, чтобы гарантированно измерить самую широкую часть." + warning;
+}
+function F7(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','visible'),
+	
+	$('#R10').css('visibility','visible'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Длина ноги. Измеряется от талии до того места, где будет заканчиваться юбка/платье/брюки. Все наши модели предусматривают длину по колено или ниже, брюки должны доходить до середины пятки в обуви ли до пола без обуви." + warning;
+}
+function F8(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','visible');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Длина внутренней стороны ноги." + warning;
+}
+function F9(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','visible'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Рост. Меряесть от пят до мокушки =)" + warning;
+}
+
+</script>
+</html>

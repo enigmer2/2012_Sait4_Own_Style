@@ -1,0 +1,83 @@
+/* Compare */
+
+#CompareWith{
+	position:absolute;
+	width:99%;
+	height:98%;
+	padding-top: 40px;
+
+}
+#CompareForm{
+	position:relative;
+	float:left;
+	display:block;
+	background-color: #0C0 transparent;
+	margin: 5px 10px 5px 10px;
+	/* [disabled]-moz-border-radius: 0px 10px 10px 10px !important;
+	-webkit-border-radius: 0px 5px 10px 10px !important;
+	border: 1px solid #49B401;  */
+}
+#photo{width:178px;height:230px;}
+#Season{height:40px;text-align:center;}
+#Material{height:40px;text-align:center;}
+#Prices{height:40px;text-align:center;}
+#Brand{height:40px;text-align:center;}
+#Colours{height:40px;text-align:center;}
+#InStorage{height:40px;text-align:center;}
+#Size{height:40px;text-align:center;}
+#Shops{
+	height:30px;
+	text-align:center;
+}
+
+#ColorForm{ padding:0px 5px 0px 5px;}
+.Color{
+	display:block;
+	float:left;
+	width:5%;
+	height:40px;
+	margin:1px 1px 1px 1px;
+	}
+#ColorFirst		{background-color:#C00;}
+#ColorSecond	{background-color:#F90;}
+#ColorThird		{background-color:#FF0;}
+#ColorFourth	{background-color:#3F0;}
+#ColorFifth		{background-color:#060;}
+#ColorSixth		{background-color:#0CF;}
+#ColorSeventh	{background-color:#00F;}
+#ColorEighth	{background-color:#009;}
+#ColorNinth		{background-color:#606;}
+#ColorTenth		{background-color:#F0F;}
+#ColorEleventh	{background-color:#996;}
+#ColorTwelfth	{background-color:#660;}
+#ColorThirteenth{background-color:#000;}
+#ColorFourteenth{background-color:#333;}
+#ColorFifteenth	{background-color:#999;}
+#ColorSixteenth	{background-color:#FFF;}
+
+#IsOn{
+	display:block;
+	background-color:#49B401;
+	margin:0px 3% 0px 3%;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+}
+#NoOn{
+	display:block;
+	background-color:#ff0000;
+	margin:0px 3% 0px 3%;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.size{
+	display:block;
+	float:left;
+	/* [disabled]width:25%; */
+	/* [disabled]height:20px; */
+	margin:1px 5% 2px 5%;
+	color: #FFF;
+	font-weight: bold;
+}

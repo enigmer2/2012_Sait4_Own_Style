@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script src="jquery-1.5.2.min.js"></script>
+<link href="size.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<title>твой личный стиль</title>
+<style type="text/css">
+.Category{
+
+	width:300px;
+	height:100%;
+	position:absolute;
+	float:left;
+	background-color:#29F8FF transparent !important;
+	left: -8px;
+	top: 40px;
+	display:block;
+	clear: both;
+	z-index: auto;
+}
+#FormSearchAnswer {
+	position:absolute;
+	display:block;
+	color:#006;
+	width:100%;
+	height:80%;
+	top: 60px;
+	left: 0px;
+	margin: 0px 0px 0px 0px;
+	}
+
+.Male{
+	float:left;
+	width:20%;
+	background-color:#A1D102;
+	margin: 0px 20px 0px 10px;
+	cursor:pointer;
+	}
+#ClothesPhoto{
+	/* [disabled]color:#D4D4BE; */
+	text-align:center;
+	-moz-border-radius: 10px 10px 10px 10px !important;
+	-webkit-border-radius: 5px 5px 10px 10px !important;
+	width:170px;
+	height:210px;
+	display:block;
+	float:left;
+	margin: 10px 5px 10px 5px;
+	background-color: #192E1A  transparent !important;
+	}
+#Search{
+	float:right;
+	width:250px;
+	height:80%;
+	background-color:#D4D4BE;
+	position: relative;
+	z-index: 1;
+	margin: 10px 0px 0px 0px;
+	top: 32px;
+	right: -5px;
+	}
+.TextSignature{
+	text-align:center;
+	}
+#ButtomMore{
+	background-color: #478500;
+	display: block;
+	margin: 10px 20% 10px 20%;
+	float: left;
+	text-align: center;
+	width: 250px;
+	height: 50px;
+	cursor: pointer;
+	}
+.SearchPrice, #jumpMenu{
+	width: 160px;
+	font-size: 14px;
+	font-family: inherit;
+	line-height: 1.4em;
+	border: 0;
+	outline: none;
+	padding: 6px;
+	border: 1px solid #999999;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+	margin: 10px 5px 10px 0px;
+	cursor:auto;
+}
+.check{
+	  style="display:block; 
+	  float:left; 
+	  margin:7px 8px 7px 7px;
+}
+
+#t1, .t2, .t3, .t4 {
+	display:block;
+	color:#006;
+	width:100%;
+	height:auto;
+	/* [disabled]margin: 40px -2px 0px 0px; */
+	/* [disabled]border-top-color: #000; */
+	/* [disabled]border-top: 1px; */
+	position: absolute;
+}
+#t1
+{
+	/* [disabled]visibility:hidden; */
+}
+.t2
+{
+	visibility:hidden;
+}
+.t3
+{
+	visibility:hidden;
+	background-color: #0F0;
+}
+.t4
+{
+	background-color:#F00;
+	visibility: hidden;
+}
+</style>
+
+</head>
+<body>
+
+<div id="" class="MenuUser">
+  <div class="TopMenu" border>
+    	Выход
+    </div>
+    <a href="4.html">
+    	<div class="TopMenu" style="width:15% !important;" border>
+        	Настройки
+        </div>
+    </a>
+
+	<a href="3.html">
+    	<div class="TopMenu" style="width:15% !important;" border>
+        	Личный Кабинет
+        </div>
+    </a>
+	<a href="5.html">
+    	<div class="TopMenu" style="width:19% !important;" border>
+        	Карта пользователя
+        </div>
+    </a>    
+   	<div class="TopMenu" style="width:18% !important;" border>
+    	Причёска, макияж
+    </div>
+	<a href="1.html">
+    	<div class="TopMenu" border>
+        	Одежда
+        </div>
+    </a> 
+</div>
+
+<div id="FormSearchAnswer" class="">  
+<div id="" class="Male" onClick="vis1()" border>Моя корзина </div>
+<div id="" class="Male" onClick="vis2()" border>Мои мерки (размеры)</div>
+<div id="" class="Male" onClick="vis3()" border>Мой магазин</div>
+
+
+<div id="t1" class="SearchAnswer">
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di33.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+        
+        <div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">100'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+        
+        <div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di34.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">300'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di32.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di34.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di32.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di33.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">600'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+        
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">400'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di33.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+        
+        <div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">100'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+        
+        <div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di34.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">300'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di32.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di34.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di32.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">200'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di33.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">600'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+        
+		<div id="" class="ClothesPhoto" onClick="" border>
+            <img src="Di31.png" width="140" height="230">
+            <label class="title">Бренд</label>
+            <label class="price">400'000 р.</label>
+            <div><input type="button" class="SearchPrice" value="В корзину" style="cursor:pointer;"></div>
+        </div>
+        
+  </div>
+
+<div id="SearchAnswer" class="t2">
+<div style="position: absolute; left: 527px; top: 12px;"><img src="men.png" width="410" height="549"></div>
+
+<div class="s1">
+	<div id="R1"><img src="Di5.png" width="7" height="542" alt="размеры"></div>
+	<div class="s2" id="R2"><img src="Di4.png" width="67" height="7" alt="размеры"></div>
+	<div class="s3" id="R3"><img src="Di4.png" width="50" height="7" alt="размеры"></div>
+	<div class="s4">
+		<div id="R4"><img src="Di4.png" width="155" height="7" alt="размеры"></div>	
+	</div>
+	<div class="s5" id="R5"><img src="Di4.png" width="100" height="7" alt="размеры"></div>
+	<div class="s7">
+		<div id="R10"><img src="Di5.png" width="7" height="293" alt="размеры"></div>
+		<div class="s6" id="R6"><img src="Di4.png" width="100" height="7" alt="размеры"></div>
+		<div class="s8" id="R7"><img src="Di4.png" width="117" height="7" alt="размеры"></div>
+		<div class="s9" id="R8"><img src="Di5.png" width="7" height="250" alt="размеры"></div>
+	</div>
+</div>
+
+<div class="s11">
+<div class="s12" id="R11"><img src="Di4.png" width="66" height="7" alt="размеры"></div>
+	<div class="s13" id="R12"><img src="Di4.png" width="45" height="7" alt="размеры"></div>
+ 	<div class="s14" id="R13">
+    	<div class="s141" id="R9"><img src="Di4.png" width="70" height="7" alt="размеры"></div>
+ 	</div>
+	<div class="s15" id="R14"><img src="Di4.png" width="75" height="7" alt="размеры"></div>
+	<div class="s17">
+		<div class="s16" id="R18"><img src="Di4.png" width="70" height="7" alt="размеры"></div>
+		<div class="s18" id="R19">
+ 			<div class="s18"><img src="Di4.png" width="75" height="7" alt="размеры"></div>	
+    	</div>
+		<div class="s19" id="R20"><img src="Di5.png" width="7" height="293" alt="размеры"></div>
+ 	</div>
+</div>
+
+<div id="pos" style="top:13px;">Обхват головы. см.
+  <form><input id="plus" type="text" onFocus="F1()"></form></div>
+<div id="pos" style="top: 62px;">Обхват шеи. см.
+  <form><input type="text" onFocus="F2()"></form></div>
+<div id="pos" style="top: 156px;">Обхват груди. см.
+<form><input type="text"  onFocus="F4()"></form></div>
+<div id="pos" style="top: 109px;">Ширина плеч. см.
+  <form><input type="text" onFocus="F3()"></form></div>
+<div id="pos" style="top: 205px;">Обхват талии. см.
+<form><input type="text" onFocus="F5()"></form></div>
+<div id="pos" style="top: 254px;">Обхват бёдер. см.
+<form><input type="text" onFocus="F6()"></form></div>
+<div id="pos" style="top: 301px;">Длинна ноги. см.
+<form><input type="text" onFocus="F7()"></form></div>
+<div id="pos" style="top: 350px;">Длинна вн.ноги. см.
+  <form><input type="text" onFocus="F8()"></form></div>
+<div id="pos" style="top: 401px;">Рост. см.
+<form><input type="text" onFocus="F9()"></form></div>
+
+<div class="text_info" id="info"></div>
+</div>
+
+<div id="SearchAnswer" class="t3">
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+</div>
+
+</body>
+<script language="javascript">
+
+function vis1(){$('#t1').css('visibility','visible'),$('.t2').css('visibility','hidden'),$('.t3').css('visibility','hidden'),$('.t4').css('visibility','hidden'),$('.text_info').css('visibility','hidden'),F10();}
+function vis2(){$('.t2').css('visibility','visible'),$('#t1').css('visibility','hidden'),$('.t3').css('visibility','hidden'),$('.t4').css('visibility','hidden')}
+function vis3(){$('.t3').css('visibility','visible'),$('.t2').css('visibility','hidden'),$('#t1').css('visibility','hidden'),$('.t4').css('visibility','hidden'),$('.text_info').css('visibility','hidden'),F10();}
+
+var warning = "<br><br><div style=\"position:inherit; vertical-align:bottom; color:#49B401\">Мерки очень важны, для лучшей сортировки одежды для Вас и отброса неважной одежды. Однако, Вы можете выберать одежду не только по своим меркам, но и для друзей - сняв галочку в поиске &quot;мои размеры&quot;.</div>";
+function F1(){
+	$('#R11').css('visibility','visible'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','visible'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden')
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват головы.<br><br> Максимальный горизонтальный обхват обхват головы над ушами. Этот размер нужен для лучшего поиска головных уборов (шляп, шапок, бейсболок) " + warning;
+}
+function F2(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','visible'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','visible'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват шеи.<br><br>Обхват, измеренный на уровне 2см. ниже кадыка и на уровне 7-го шейного позвонка." + warning;
+}
+function F3(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','visible'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Ширина плеч.<br><br>Лучше всего измерять по Вашей любимой рубашке или блузке: от отдного шва до другого, по спине через основание шеи." + warning;
+}
+function F4(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','visible'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','visible'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват груди.<br><br>Максимальный горизонтальный обхват, измеренный при нормальном дыхании ( измерительная лента проходит через лопатки, подмышки и выступающие точки грудных желёз )" + warning;
+}
+function F5(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','visible'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','visible'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват талии.<br><br>Обхват естественной линии талии между подвздохочными костями и нижними рёбрами. При обмере человек стоит выпрямившись и с расслабленным животом." + warning;
+}
+function F6(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','visible'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','visible'),
+	$('#R8').css('visibility','hidden'),
+	$('#R10').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Обхват бедер.<br><br>Горизонтальный обхват измеренный на наиболее выступающих точках ягодиц. Рекомендуется подвигать портновский метр вверх и вниз, чтобы гарантированно измерить самую широкую часть." + warning;
+}
+function F7(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','visible'),
+	
+	$('#R10').css('visibility','visible'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Длина ноги.<br><br>Расстояние от линни талии до пола. Измерения проводят по контуру бедра, далее вертикально до середины пятки в обуви или до пола без обуви.." + warning;
+}
+function F8(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','visible');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Длина внутренней стороны ноги.<br><br>Расстояние по внутренней поверхности ноги от промежности до основание ступни, измерение по прямой." + warning;
+}
+function F9(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','visible'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden');
+	$('.text_info').css('visibility','visible');
+	var info = document.getElementById('info');
+	info.innerHTML = "Рост.<br><br>Вертикальное расстояние от мокушки головы до подошв ступней. При измерении человек - смотрит прямо, без обуви,ступни ног вместе." + warning;
+}
+
+function F10(){
+	$('#R11').css('visibility','hidden'),
+	$('#R12').css('visibility','hidden'),
+	$('#R13').css('visibility','hidden'),
+	$('#R14').css('visibility','hidden'),
+	$('#R15').css('visibility','hidden'),
+	$('#R16').css('visibility','hidden'),
+	$('#R17').css('visibility','hidden'),
+	$('#R18').css('visibility','hidden'),
+	$('#R19').css('visibility','hidden'),
+	$('#R20').css('visibility','hidden'),
+	
+	$('#R10').css('visibility','hidden'),
+	$('#R1').css('visibility','hidden'),
+	$('#R2').css('visibility','hidden'),
+	$('#R3').css('visibility','hidden'),
+	$('#R4').css('visibility','hidden'),
+	$('#R5').css('visibility','hidden'),
+	$('#R6').css('visibility','hidden'),
+	$('#R7').css('visibility','hidden'),
+	$('#R8').css('visibility','hidden');
+}
+
+</script>
+</html>
